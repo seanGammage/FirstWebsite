@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+section p
+	{
+		margin-left: 1em;
+		text-align: left;
+	}
+
+#art2
+	{
+		padding-top: 7em;
+	}
+	
+#rollovereffect
+	{
+		background-image: url("../images/pet3.jpg");
+		height: 300px;
+		width: 300px;
+		align: center;
+	}
+	
+#rollovereffect:hover
+	{
+		background-image: url("../images/pet2.jpg");
+	}
+
+#art2
+{
+	width: 200px;
+	margin:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

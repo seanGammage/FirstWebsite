@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Contact Form</title>
+
+<!-- Allow older browsers to use the new HTML 5 sematic elements -->
+<script type="text/javascript" src="http://htnml5shiv.googlecode.com/svn/trunk/html5.js" >
+</script>
+
+<!-- Link the html5 shiv css file to this file -->
+<link type="text/css" rel="stylesheet" href="styles/html5_shiv.css" />
+
+<!-- Link the external file sheet -->
+<Link type="text/css" rel="stylesheet" href="styles/cp_static_elements.css" />
+
+<!-- Link to the contact style sheet -->
+<Link type="text/css" rel="stylesheet" href="styles/contact.css" />
+
+</head>
+
+<body>
+
+    <header>
+   		<figure id="figure1">
+    	<img src="images/hockey_avitar.jpg" alt="Hockey avitar image" width="100px" height="100px" />
+   		 </figure>
+    
+    	<figure id="figure2">
+    	<img src="images/hockey_avitar.jpg" alt="Hockey avitar image" width="100px" height="100px" />
+   		 </figure>
+        
+       	 <hgroup>
+            <p>
+            <h1>CONTACT FORM:</h1>
+            This form will allow friends and family to submit their contact information to you. 
+            </p>
+   		 </hgroup>
+        
+    </header>
+    
+    <nav>
+    	
+        <ul>
+            <li><input type="button" name="linkbutton1" id="linkbutton1" value="Home" 
+            onClick="window.location.replace('index.html');" /></li>
+            
+                <li><input type="button" name="linkbutton2" id="linkbutton2" value="Contact Form" 
+            onClick="window.location.replace('contact_form.html');" /></li>
+            
+                <li><input type="button" name="linkbutton2" id="linkbutton3" value="My Pet" 
+                onClick="window.location.replace('mypet.html');" /></li>
+                
+                <li><input type="button" name="linkbutton2" id="linkbutton4" value="Javascripts" 
+            onClick="window.location.replace('javascripts.html');" /></li>
+        </ul>
+    </nav>
+    
+<form name="contact info" action"" method="get">
+    <!-- text fields in a web browser -->
+   <fieldset>
+   		<legend>Name and Address</legend>
+        
+   		<p>
+        <label for"Last Name" class="p339">Last Name: </label>
+        <input type="text" name="Lname" id="Lname" size="15" min="2" maxlength="15"
+        title="Last Name: " class="p339" required />
+        </p>
+        
+        <p>
+       	<label for"First Name" class="p339">First Name: </label>
+        <input type="text" name="Fname" id="Fname" size="20" min="2" maxlength="20"
+        title="First Name: " class="p339" required />
+        </p>
+        
+        <p>
+        <label for"Street Address" class="p339">Street Address: </label>
+        <input type="text" name="streetAddresss" id="streetAddress" size="35" min="5" maxlength="35"
+        title="Street Address " class="p339" required />
+        </p>
+        
+        <p>
+        <label for"City" class="p339">City: </label>
+        <input type="text" name="City" id="City" size="20" min="2" maxlength="20"
+        title="City " class="p339" required />
+        </p>
+        
+        <p>
+        <label for"State" class="p339">State: </label>
+        <input type="text" name="State" id="State" size="2" maxlength="2"
+        title="State " class="p339" required />
+        </p>
+        
+        <p>
+        <label for="zip" class="p339">Zip Code:</label>
+        <input type="text" name="zip" id="zip" placeholder="(#####)-####" title="Valid zip code formats: ##### or #####-####"
+        size="10" maxlength="10" class="p339" required pattern="\d{5}([\-]\d{4})?" />
+        </p>
+   </fieldset>
+   
+   <!-- Radio Buttons -->
+   <fieldset>
+   		<legend>Info</legend>
+        
+   		<p id="Rbutton">
+        	Relationship: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio"  name="relationship" value="friend" checked="checked" />
+            <label for"radio1">Friend</label>
+            
+            <input type="radio" name="relationship" value="family" checked="uncheck" />
+            <label for"radio2">Family</label>
+        </p>
+        
+        <P>
+        	<label for"date" class="p339">Date: </label>
+        	<input type="text" name="date" id="date" placeholder="(MM/DD/YYYY)" title="Enter the valid date format" size="10" maxlength="10" class="p339"
+            required pattern="\d{1,2}/\d{1,2}/\d{4}" />
+        </P>
+        
+        <p>
+        	<label for"phone" class="p339">Phone Number: </label>
+            <input type="text" name="phone" id="phone" placeholder="(999-999-9999)" title="Enter the valid phone number format" size="10" maxlength="10" class="p339"
+            required pattern="^(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}$" />
+        </p>
+        
+        <p>
+        <label for"zip" class="p339">Email Adddress:</label>
+        <input type="email" name="email" id="email" size="50" maxlength="50"
+        title="You must enter a valid email address:" class="p339" required />
+        </p>
+        
+        <p id="CBbutton">
+        	Please select Phone <br/> and/or email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="phoneCB" id="phoneCB" value="phoneCB" />
+            <label for="phoneCB">Phone</label>
+            
+            <input type="checkbox" name="emailCB" id="emailCB" value="emailCB" />
+            <label for="emailCB">Email</label>
+        </p>
+   </fieldset>
+  
+  
+  <fieldset>
+	<legend>Text Area</legend>
+    	<textarea name="comment" id="comment" style="height: 5em; width: 50em" min="5" maxlength="50" placeholder="Enter your comments here:"></textarea>
+</fieldset>
+
+<fieldset>
+<legend>To process your data, click the submit button</legend>
+<p>
+	<input type="submit" name="submit" id="submit" value="Submit Form Data" />
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <input type="reset" name="reset" id="reset" value="Reset Form" />
+</p>
+</fieldset>
+</form>
+   
+    <footer>
+    <hr/>
+   		 
+    
+    	<figure id="figure3">
+    	<img src="images/PointLogo.jpg" alt="Hockey avitar image" width="100px" height="100px" />
+   		 </figure>
+         
+       
+         <figure id="figure4">
+    	<img src="images/PointLogo.jpg" alt="Hockey avitar image" width="100px" height="100px" />
+   		 </figure>
+         
+         <address>
+         	<p>
+         	Course: CNMT 210, Professor: Heckendorf.
+            </p>
+         </address>
+    
+    </footer>
+
+
+
+
+</body>
+</html>

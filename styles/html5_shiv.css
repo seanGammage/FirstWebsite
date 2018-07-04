@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* Final Project shiv */
+
+header, section, article, figure, aside, footer 
+{display:block}

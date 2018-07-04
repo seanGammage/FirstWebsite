@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Final Project Semantic Elements */
+
+html
+	{
+	height: 200%;
+	/* [disabled]width: 100%; */
+		
+		
+	}
+
+body	
+	{
+		position: relative;
+		margin:auto;
+		text-align:center;
+		height: 100%;
+		width: 90%;
+		min-width:1000px;
+		
+		color:#FFF;
+		font-size: 20px;
+		
+		background-color:grey;
+		
+		background-image: linear-gradient(top, black 0%, darkgrey 50%, black 75%);
+		background-image: -moz-linear-gradient(top, black 0%, darkgrey 50%, black 75%);
+		background-image: -webkit-linear-gradient(top, black 0%, darkgrey 50%, black 75%);
+		background-image: -o-linear-gradient(top, black 0%, darkgrey 50%, black 75%);
+	}
+	
+header
+	{
+		position: relative;
+		color: lightblue;
+		font-weight: bold;
+		font-size: 35px;
+		
+		border:50px red;
+		margin-top:2em;
+		margin-bottom:1em;
+		height:10%;
+		
+		border-radius:30px;
+		-moz-border-radius:30px;
+		-webkit-border-radius:30px;
+		-o-border-radius:30px;
+		
+		box-shadow: 5px 5px blue;
+		-moz-box-shadow: 5px 5px blue;
+		-webkit-box-shadow: 5px 5px blue;
+		-o-box-shadow: 5px 5px blue;
+	}
+	
+
+
+#figure1
+	{
+		float:right;
+		
+	}
+	
+#figure2
+	{
+		float:left;
+		
+	}
+	
+nav
+	{
+		clear:both;
+	}
+	
+nav ul
+	{
+		list-style-type:none; /*gets rid of the bullets */
+		text-align:center;
+		padding-left: 1em;
+	}
+
+nav li
+	{
+		/* make the list horizontal */
+		display:inline;
+		padding-left: .25em;
+	}
+	
+nav li input
+	{
+		/* makes all the element boxes the same size and have space between them */
+		width:8em;
+		margin: 0 4em;
+	}
+	
+footer
+	{
+		
+		clear:both;
+		/*padding-top:20em;*/
+		
+		
+	}
+	
+#figure3
+	{
+		float:left;
+	}
+	
+#figure4
+	{
+		float:right;
+	}
+	
+address
+	{
+		clear:both;
+		text-align:center;
+		
+		
+	}
+	
+
+	
+address p
+	{
+		height: 10px;
+	}
+	
+#bioList.circle 
+	{
+		list-style-type: circle;
+	
+	}
+	
+h3:first-letter
+	{
+		font-size:40px;
+		font-weight:bold;	
+	}
+	
+section
+	{
+		color: lightblue;
+		
+	}
+
+h3
+	{
+		color: blue;
+		text-decoration:underline;
+	}
+	
+.a:first-letter
+	{
+		font-size:30px;
+		font-weight:bold;
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
